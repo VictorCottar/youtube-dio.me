@@ -42,6 +42,7 @@
     flex-shrink: 0;
     border: 1px solid #CCC;
     background: #FFF;
+    border-radius: 8px 0px 0px 8px;
 }
 
 .menu #center-menu #lupa {
@@ -52,6 +53,7 @@
     background: #F8F8F8;
     display: flex;
     justify-content: center;
+    border-radius: 0px 8px 8px 0px;
 }
 
 .menu #center-menu #lupa #lupa-img {
@@ -77,7 +79,7 @@
 .video {
     width: 1050px;
     height: 820px;
-    gap: 16px;
+    gap: 18px;
     margin: 44px 413px 205px 75px;
     display: inline-flex;
     flex-direction: column;
@@ -91,4 +93,47 @@
 
 .video #info-video {
     width: 1050px;
+}
+.video #info-video #tittle-video {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;  
+}
+
+.video #info-video #video-actions {
+    width: 910px;
+    height: 42px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.video #info-video #video-actions #channel-info {
+    width: 165px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.video #info-video #video-actions #channel-info #channel-avatar {
+    width: 42px;
+    height: 42px;
+}
+
+.video #info-video #video-actions #channel-info #name-sub-channel {
+    width: 106px;
+    height: 32px;
+}
+
+.video #info-video #video-actions #channel-info #name-channel {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video #info-video #video-actions #channel-info #sub-channel {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151;
 }
