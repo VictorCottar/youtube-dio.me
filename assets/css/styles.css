@@ -1,0 +1,71 @@
+@import url(reset.css);
+
+.menu {
+    width: 1440px;
+    height: 56px;
+    padding: 3px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.menu #left-menu {
+    width: 146px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu #left-menu #menu-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.menu #left-menu #logo-yt {
+    width: 90px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.menu #center-menu {
+    width: 404px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.menu #center-menu #search {
+    width: 348px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+.menu #center-menu #lupa {
+    width: 57px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #CCC;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+}
+
+.menu #center-menu #lupa #lupa-img {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.menu #right-menu {
+    width: 130px;
+    height: 34px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
