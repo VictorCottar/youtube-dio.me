@@ -1,7 +1,6 @@
 @import url(reset.css);
 
 .menu {
-    width: 1440px;
     height: 56px;
     padding: 3px 24px;
     display: flex;
@@ -68,4 +67,28 @@
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
+}
+
+.menu #right-menu #video-img #noti-img #avatar-img {
+    width: 24px;
+    height: 24px;
+}
+
+.video {
+    width: 1050px;
+    height: 820px;
+    gap: 16px;
+    margin: 44px 413px 205px 75px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.video #play-video {
+    width: 1050px;
+    height: 575px;
+}
+
+.video #info-video {
+    width: 1050px;
 }
