@@ -94,10 +94,11 @@
 .video #info-video {
     width: 1050px;
 }
+
 .video #info-video #tittle-video {
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;  
+    font-weight: 600;
 }
 
 .video #info-video #video-actions {
@@ -136,4 +137,15 @@
     font-size: 14px;
     font-weight: 400;
     color: #515151;
+}
+
+.video #info-video #video-actions #sub-button {
+    width: 159px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #FFF;
+    background-color: #C00;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
 }
