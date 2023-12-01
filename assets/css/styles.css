@@ -52,7 +52,10 @@
     border: 1px solid #CCC;
     background: #F8F8F8;
     display: flex;
-    justify-content: center;
+    justify-content: center;.video #info-video #video-actions #like #box-txt-like #txt-like  {
+        font-size: 14px;
+        font-weight: 600;
+    }
     border-radius: 0px 8px 8px 0px;
 }
 
@@ -148,4 +151,49 @@
     border-radius: 2px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
+}
+
+.video #info-video #video-actions #like {
+    width: 66px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.video #info-video #video-actions #like #like-img #dislike-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.video #info-video #video-actions #like #box-txt-like {
+    width: 31px;
+    height: 16px;
+    align-self: center;
+}
+
+.video #info-video #video-actions #like #box-txt-like #txt-like  {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video #info-video #video-actions #dislike {
+    width: 105px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.video #info-video #video-actions #dislike #box-txt-dislike {
+    width: 77px;
+    height: 16px;
+    align-self: center;
+}
+
+.video #info-video #video-actions #dislike #box-txt-dislike #txt-dislike {
+    font-size: 14px;
+    font-weight: 600;
 }
