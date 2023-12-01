@@ -52,10 +52,13 @@
     border: 1px solid #CCC;
     background: #F8F8F8;
     display: flex;
-    justify-content: center;.video #info-video #video-actions #like #box-txt-like #txt-like  {
+    justify-content: center;
+
+    .video #info-video #video-actions #like #box-txt-like #txt-like {
         font-size: 14px;
         font-weight: 600;
     }
+
     border-radius: 0px 8px 8px 0px;
 }
 
@@ -99,9 +102,11 @@
 }
 
 .video #info-video #tittle-video {
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
+    word-spacing: 1px;
+    margin: 0px 0px 15px 0px;
 }
 
 .video #info-video #video-actions {
@@ -110,7 +115,7 @@
     margin-top: 7px;
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: 44px;
 }
 
 .video #info-video #video-actions #channel-info {
@@ -162,7 +167,7 @@
     gap: 8px;
 }
 
-.video #info-video #video-actions #like #like-img #dislike-img {
+.video #info-video #video-actions #like #like-img {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
@@ -174,7 +179,7 @@
     align-self: center;
 }
 
-.video #info-video #video-actions #like #box-txt-like #txt-like  {
+.video #info-video #video-actions #like #box-txt-like #txt-like {
     font-size: 14px;
     font-weight: 600;
 }
@@ -187,6 +192,12 @@
     gap: 8px;
 }
 
+.video #info-video #video-actions #dislike-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
 .video #info-video #video-actions #dislike #box-txt-dislike {
     width: 77px;
     height: 16px;
@@ -194,6 +205,56 @@
 }
 
 .video #info-video #video-actions #dislike #box-txt-dislike #txt-dislike {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video #info-video #video-actions #share {
+    width: 115px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.video #info-video #video-actions #share #share-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.video #info-video #video-actions #share #box-txt-share {
+    width: 87px;
+    height: 16px;
+    align-self: center;
+}
+
+.video #info-video #video-actions #share #box-txt-share #txt-share {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video #info-video #video-actions #download {
+    width: 95px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.video #info-video #video-actions #download #download-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.video #info-video #video-actions #download #box-txt-download {
+    width: 63px;
+    height: 16px;
+    align-self: center;
+}
+
+.video #info-video #video-actions #download #box-txt-download #txt-download {
     font-size: 14px;
     font-weight: 600;
 }
