@@ -1,5 +1,9 @@
 @import url(reset.css);
 
+/*
+    header
+*/
+
 .menu {
     color: #FFF;
     padding: 10px 24px;
@@ -80,6 +84,10 @@
     height: 24px;
 }
 
+/*
+    main
+*/
+
 main {
     width: 100%;
     display: flex;
@@ -100,7 +108,6 @@ main .video #play-video {
     width: 952px;
     height: 537px;
 }
-
 
 main .video #tittle-video {
     font-size: 22px;
@@ -167,7 +174,7 @@ main .video #video-actions #like {
     gap: 8px;
 }
 
-main .video #video-actions #like #like-img {
+main .video #video-actions #like #like-img main .video #video-actions #dislike #dislike-img main .video #video-actions #share #share-img main .video #video-actions #download #download-img {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
@@ -192,18 +199,6 @@ main .video #video-actions #dislike {
     gap: 8px;
 }
 
-main .video #video-actions #dislike-img {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-}
-
-main .video #video-actions #dislike {
-    width: 105px;
-    height: 24px;
-    flex-shrink: 0;
-}
-
 main .video #video-actions #dislike #box-txt-dislike {
     width: 77px;
     height: 16px;
@@ -223,12 +218,6 @@ main .video #video-actions #share {
     gap: 8px;
 }
 
-main .video #video-actions #share #share-img {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-}
-
 main .video #video-actions #share #box-txt-share {
     width: 87px;
     height: 16px;
@@ -246,12 +235,6 @@ main .video #video-actions #download {
     display: flex;
     justify-content: space-between;
     gap: 8px;
-}
-
-main .video #video-actions #download #download-img {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
 }
 
 main .video #video-actions #download #box-txt-download {
@@ -278,17 +261,21 @@ main .video #description-video {
     font-weight: 400;
 }
 
+/*
+    sidebar
+*/
+
 main .playlist-video {
     width: 390px;
     height: 950px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 19px;
     margin: 30px 0px 2px -380px;
 }
 
-main .playlist-video #video-in-playlist {
+main .playlist-video .video-in-playlist {
     display: flex;
     height: 90px;
     justify-content: flex-end;
@@ -296,13 +283,13 @@ main .playlist-video #video-in-playlist {
     gap: 16px;
 }
 
-main .playlist-video #video-in-playlist .thumb-playlist {
+main .playlist-video .video-in-playlist .thumb-playlist {
     width: 160px;
     height: 90px;
     object-fit: fill;
 }
 
-main .playlist-video #video-in-playlist #info-video-playlist {
+main .playlist-video .video-in-playlist .info-video-playlist {
     width: 199px;
     height: 89px;
     display: flex;
@@ -310,19 +297,19 @@ main .playlist-video #video-in-playlist #info-video-playlist {
     gap: 6px;
 }
 
-main .playlist-video #video-in-playlist #info-video-playlist .tittle-video-playlist {
+main .playlist-video .video-in-playlist .info-video-playlist .tittle-video-playlist {
     font-size: 16px;
     font-weight: 600;
 }
-main .playlist-video #video-in-playlist #info-video-playlist .name-channel-playlist {
+
+main .playlist-video .video-in-playlist .info-video-playlist .name-channel-playlist .views-video-playlist {
     color: #515151;
     font-size: 12px;
     font-weight: 400;
 }
 
-main .playlist-video #video-in-playlist #info-video-playlist .views-video-playlist {
+main .playlist-video .video-in-playlist .info-video-playlist .views-video-playlist {
     color: #515151;
     font-size: 12px;
     font-weight: 400;
 }
-
