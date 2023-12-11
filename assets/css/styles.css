@@ -1,8 +1,8 @@
 @import url(reset.css);
 
 .menu {
-    height: 56px;
-    padding: 3px 24px;
+    color: #FFF;
+    padding: 10px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,12 +21,14 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    align-self: center;
 }
 
 .menu #left-menu #logo-yt {
     width: 90px;
     height: 20px;
     flex-shrink: 0;
+    align-self: center;
 }
 
 .menu #center-menu {
@@ -36,9 +38,11 @@
     display: flex;
 }
 
-.menu #center-menu #search {
+.menu #center-menu #search #search-input {
     width: 348px;
-    height: 40px;
+    height: 42px;
+    padding: 7px;
+    font-size: 17px;
     flex-shrink: 0;
     border: 1px solid #CCC;
     background: #FFF;
@@ -47,18 +51,12 @@
 
 .menu #center-menu #lupa {
     width: 57px;
-    height: 40px;
+    height: 42px;
     flex-shrink: 0;
     border: 1px solid #CCC;
     background: #F8F8F8;
     display: flex;
     justify-content: center;
-
-    .video #info-video #video-actions #like #box-txt-like #txt-like {
-        font-size: 14px;
-        font-weight: 600;
-    }
-
     border-radius: 0px 8px 8px 0px;
 }
 
@@ -82,43 +80,45 @@
     height: 24px;
 }
 
-.video {
+main {
+    width: 100%;
+    display: flex;
+    background: #F9F9F9;
+}
+
+main .video {
     width: 1050px;
-    height: 820px;
-    gap: 18px;
-    margin: 44px 413px 205px 75px;
+    height: 780px;
+    gap: 16px;
+    margin: 30px 413px 205px 75px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.video #play-video {
-    width: 1050px;
-    height: 575px;
+main .video #play-video {
+    width: 952px;
+    height: 537px;
 }
 
-.video #info-video {
-    width: 1050px;
-}
 
-.video #info-video #tittle-video {
+main .video #tittle-video {
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
     word-spacing: 1px;
-    margin: 0px 0px 15px 0px;
 }
 
-.video #info-video #video-actions {
-    width: 910px;
+main .video #video-actions {
+    width: 920px;
     height: 42px;
-    margin-top: 7px;
     display: flex;
     align-items: center;
     gap: 44px;
+    cursor: pointer;
 }
 
-.video #info-video #video-actions #channel-info {
+main .video #video-actions #channel-info {
     width: 165px;
     height: 42px;
     display: flex;
@@ -126,28 +126,28 @@
     gap: 12px;
 }
 
-.video #info-video #video-actions #channel-info #channel-avatar {
+main .video #video-actions #channel-info #channel-avatar {
     width: 42px;
     height: 42px;
 }
 
-.video #info-video #video-actions #channel-info #name-sub-channel {
+main .video #video-actions #channel-info #name-sub-channel {
     width: 106px;
     height: 32px;
 }
 
-.video #info-video #video-actions #channel-info #name-channel {
+main .video #video-actions #channel-info #name-channel {
     font-size: 14px;
     font-weight: 600;
 }
 
-.video #info-video #video-actions #channel-info #sub-channel {
+main .video #video-actions #channel-info #sub-channel {
     font-size: 14px;
     font-weight: 400;
     color: #515151;
 }
 
-.video #info-video #video-actions #sub-button {
+main .video #video-actions #sub-button {
     width: 159px;
     height: 40px;
     flex-shrink: 0;
@@ -159,7 +159,7 @@
     font-weight: 600;
 }
 
-.video #info-video #video-actions #like {
+main .video #video-actions #like {
     width: 66px;
     height: 24px;
     display: flex;
@@ -167,24 +167,24 @@
     gap: 8px;
 }
 
-.video #info-video #video-actions #like #like-img {
+main .video #video-actions #like #like-img {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
 }
 
-.video #info-video #video-actions #like #box-txt-like {
+main .video #video-actions #like #box-txt-like {
     width: 31px;
     height: 16px;
     align-self: center;
 }
 
-.video #info-video #video-actions #like #box-txt-like #txt-like {
+main .video #video-actions #like #box-txt-like #txt-like {
     font-size: 14px;
     font-weight: 600;
 }
 
-.video #info-video #video-actions #dislike {
+main .video #video-actions #dislike {
     width: 105px;
     height: 24px;
     display: flex;
@@ -192,24 +192,30 @@
     gap: 8px;
 }
 
-.video #info-video #video-actions #dislike-img {
+main .video #video-actions #dislike-img {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
 }
 
-.video #info-video #video-actions #dislike #box-txt-dislike {
+main .video #video-actions #dislike {
+    width: 105px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+main .video #video-actions #dislike #box-txt-dislike {
     width: 77px;
     height: 16px;
     align-self: center;
 }
 
-.video #info-video #video-actions #dislike #box-txt-dislike #txt-dislike {
+main .video #video-actions #dislike #box-txt-dislike #txt-dislike {
     font-size: 14px;
     font-weight: 600;
 }
 
-.video #info-video #video-actions #share {
+main .video #video-actions #share {
     width: 115px;
     height: 24px;
     display: flex;
@@ -217,24 +223,24 @@
     gap: 8px;
 }
 
-.video #info-video #video-actions #share #share-img {
+main .video #video-actions #share #share-img {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
 }
 
-.video #info-video #video-actions #share #box-txt-share {
+main .video #video-actions #share #box-txt-share {
     width: 87px;
     height: 16px;
     align-self: center;
 }
 
-.video #info-video #video-actions #share #box-txt-share #txt-share {
+main .video #video-actions #share #box-txt-share #txt-share {
     font-size: 14px;
     font-weight: 600;
 }
 
-.video #info-video #video-actions #download {
+main .video #video-actions #download {
     width: 95px;
     height: 24px;
     display: flex;
@@ -242,19 +248,81 @@
     gap: 8px;
 }
 
-.video #info-video #video-actions #download #download-img {
+main .video #video-actions #download #download-img {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
 }
 
-.video #info-video #video-actions #download #box-txt-download {
+main .video #video-actions #download #box-txt-download {
     width: 63px;
     height: 16px;
     align-self: center;
 }
 
-.video #info-video #video-actions #download #box-txt-download #txt-download {
+main .video #video-actions #download #box-txt-download #txt-download {
     font-size: 14px;
     font-weight: 600;
 }
+
+main .video #views {
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+main .video #description-video {
+    width: 590px;
+    height: 45px;
+    color: #515151;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main .playlist-video {
+    width: 390px;
+    height: 950px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 30px 0px 2px -380px;
+}
+
+main .playlist-video #video-in-playlist {
+    display: flex;
+    height: 90px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+main .playlist-video #video-in-playlist .thumb-playlist {
+    width: 160px;
+    height: 90px;
+    object-fit: fill;
+}
+
+main .playlist-video #video-in-playlist #info-video-playlist {
+    width: 199px;
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+main .playlist-video #video-in-playlist #info-video-playlist .tittle-video-playlist {
+    font-size: 16px;
+    font-weight: 600;
+}
+main .playlist-video #video-in-playlist #info-video-playlist .name-channel-playlist {
+    color: #515151;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+main .playlist-video #video-in-playlist #info-video-playlist .views-video-playlist {
+    color: #515151;
+    font-size: 12px;
+    font-weight: 400;
+}
+

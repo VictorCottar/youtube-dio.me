@@ -10,32 +10,41 @@
 </head>
 
 <body>
-    <nav class="menu">
+    <header class="menu">
         <div id="left-menu">
             <img id="menu-img" src="images/menu.png" alt="Menu do Youtube.">
             <img id="logo-yt" src="images/youtube 1.png" alt="Logo do Youtube.">
         </div>
+
         <div id="center-menu">
-            <div id="search"></div>
+            <div id="search">
+                <input id="search-input" type="text">
+            </div>
+
             <div id="lupa">
                 <img id="lupa-img" src="images/search.png" alt="Lupa do search.">
             </div>
         </div>
+
         <div id="right-menu">
             <img id="video-img" src="images/video.png" alt="Botão de video.">
             <img id="noti-img" src="images/bell.png" alt="Botão de notificação.">
             <img id="avatar-img" src="images/do-utilizador.png" alt="Perfil do Youtube.">
         </div>
-    </nav>
-    <section class="video">
-        <div id="play-video">
-            <iframe width="1050" height="575" src="https://www.youtube.com/embed/zGPS2BilrJI?si=rnyTg5PJRLr5a39A"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-        <div id="info-video">
+
+    </header>
+
+    <main>
+        <section class="video">
+            <div id="play-video">
+                <iframe width="952" height="537" src="https://www.youtube.com/embed/zGPS2BilrJI?si=rnyTg5PJRLr5a39A"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
             <h1 id="tittle-video">TUDO o que um DESENVOLVEDOR FRONT-END deve saber! | Getting Started #23</h1>
+
             <div id="video-actions">
                 <div id="channel-info">
                     <img id="channel-avatar" src="images/Channel Avatar.png" alt="Logo do Canal.">
@@ -44,34 +53,64 @@
                         <p id="sub-channel">103 mil inscritos</p>
                     </div>
                 </div>
+
                 <button id="sub-button">INSCREVA-SE</button>
+
                 <div id="like">
                     <img id="like-img" src="images/thumbs-up.png" alt="Gostei.">
                     <div id="box-txt-like">
                         <p id="txt-like">2 mil</p>
                     </div>
                 </div>
+
                 <div id="dislike">
                     <img id="dislike-img" src="images/thumbs-down.png" alt="Não Gostei.">
                     <div id="box-txt-dislike">
                         <p id="txt-dislike">Não Gostei</p>
                     </div>
                 </div>
+
                 <div id="share">
                     <img id="share-img" src="images/share-2.png" alt="Compartilhar">
                     <div id="box-txt-share">
                         <p id="txt-share">Compartilhar</p>
                     </div>
                 </div>
+
                 <div id="download">
                     <img id="download-img" src="images/download.png" alt="Download">
                     <div id="box-txt-download">
                         <p id="txt-download">Download</p>
                     </div>
                 </div>
+
             </div>
-        </div>
-    </section>
+
+            <p id="views">28.987 mil visualizações Transmitido ao vivo em 23 de Agosto de 2023</p>
+            <p id="description-video">Bora falar de front-end?
+                No Getting Started de hoje, o Felipão trouxe pouco sobre os fundamentos e por onde começar a sua jornada
+                na
+                área.
+                Seja com HTML, CSS ou Javascript, criar páginas e apps lindões vai ficar ainda mais simples! 😎</p>
+        </section>
+
+        <section class="playlist-video">
+            <div id="video-in-playlist">
+                <div class="thumb-playlist">
+                    <img src="images/Thumb.png" alt="Thumbnail.">
+                </div>
+            <div id="info-video-playlist">
+                <h3 class="tittle-video-playlist">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                <p class="name-channel-playlist">DigitalInnovationOne</p>
+                <p class="views-video-playlist"> 2,1 mil visualizações <br>
+                    Transmitido há 2 dias</p>
+            </div>    
+                
+            </div>
+
+        </section>
+
+    </main>
 </body>
 
 </html>
